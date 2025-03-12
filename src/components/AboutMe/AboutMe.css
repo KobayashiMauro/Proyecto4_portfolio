@@ -1,0 +1,75 @@
+:root {
+  --gaps-rem: 3.125rem;
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gaps-rem);
+  gap: var(--gaps-rem);
+}
+.avatartext {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gaps-rem);
+  margin: var(--gaps-rem);
+}
+.avatartext > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatartext > .rotate {
+  animation: rotate infinite 5s;
+}
+
+.aboutme > p,
+a {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.avatartext > p {
+  max-width: 600px;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.aboutme > ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--);
+}
+
+.aboutme li {
+  padding: 2px 8px;
+  background-color: var(--body);
+  border-radius: 1rem;
+  color: var(--background);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1165px) {
+  .avatartext {
+    flex-direction: column-reverse;
+  }
+  .avatartext p {
+    text-align: center;
+  }
+}

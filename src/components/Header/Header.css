@@ -1,0 +1,14 @@
+header {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header li {
+  text-align: center;
+}
