@@ -1,6 +1,3 @@
-:root {
-  --gaps-rem: 3.125rem;
-}
 .aboutme {
   display: flex;
   flex-direction: column;

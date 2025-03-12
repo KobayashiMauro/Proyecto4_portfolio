@@ -3,6 +3,7 @@
   --heading: #ffffff;
   --body: #b58064;
   font-family: 'Open Sans', sans-serif;
+  --gaps-rem: 3.125rem;
 }
 
 * {
